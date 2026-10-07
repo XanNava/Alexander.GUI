@@ -1,0 +1,24 @@
+<Project>
+
+  <!--
+    Where the main Alexander solution lives, relative to this one. This is
+    the only place the two solutions are tied together; change the paths
+    here (or pass /p:AlexanderRoot=... on the command line) to match your
+    layout. Defaults assume the two solution folders sit side by side:
+
+      <somewhere>/Alexander/      (Contracts, Graphics, Hosting, Core, Shell, ...)
+      <somewhere>/AlexanderGui/   (this solution)
+  -->
+  <PropertyGroup>
+    <AlexanderRoot Condition="'$(AlexanderRoot)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../Alexander'))</AlexanderRoot>
+
+    <!--
+      The Shell the GUI launches (one process per command window, with
+      host). A .csproj runs through "dotnet run"; pointing Settings at the
+      built Shell (Alexander.Shell.exe on Windows, the Alexander.Shell
+      apphost or its .dll elsewhere) starts much faster.
+    -->
+    <AlexanderShellProject Condition="'$(AlexanderShellProject)' == ''">$(AlexanderRoot)/Alexander.Shell/Alexander.Shell.csproj</AlexanderShellProject>
+  </PropertyGroup>
+
+</Project>

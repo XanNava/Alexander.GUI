@@ -1,0 +1,43 @@
+<Project Sdk="Uno.Sdk/6.7.30">
+
+  <!--
+    Uno Platform single project. net10.0-desktop is one build that runs on
+    Windows (Win32), macOS and Linux (X11 / framebuffer), all rendered with
+    Skia. The Uno.Sdk version is pinned above.
+
+      dotnet run -f net10.0-desktop
+  -->
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-desktop</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Alexander.Gui</RootNamespace>
+    <AssemblyName>Alexander.Gui</AssemblyName>
+
+    <ApplicationTitle>Alexander</ApplicationTitle>
+    <ApplicationId>dev.alexander.gui</ApplicationId>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+
+    <!-- Nothing extra: SKCanvasElement (service views) ships with every desktop target. -->
+    <UnoFeatures></UnoFeatures>
+  </PropertyGroup>
+
+  <!--
+    The GUI knows nothing about Core: it launches the Shell and speaks the
+    Alexander.Hosting protocol to it. Graphics is for replaying service
+    views' drawings.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="$(AlexanderRoot)/Platform/Hosting/*.csproj" />
+    <ProjectReference Include="$(AlexanderRoot)/Platform/Graphics/*.csproj" />
+  </ItemGroup>
+
+  <!-- Baked in as the default Shell path; overridable in Settings. -->
+  <ItemGroup>
+    <AssemblyMetadata Include="AlexanderShellProject" Value="$(AlexanderShellProject)" />
+  </ItemGroup>
+
+</Project>

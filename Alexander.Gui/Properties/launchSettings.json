@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Alexander.Gui (Desktop)": {
+      "commandName": "Project",
+      "compatibleTargetFramework": "desktop"
+    }
+  }
+}

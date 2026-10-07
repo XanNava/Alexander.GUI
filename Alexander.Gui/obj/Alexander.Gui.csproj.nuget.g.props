@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Alexa\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Alexa\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net10.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.foundation\6.7.135\buildTransitive\Uno.Foundation.props" Condition="Exists('$(NuGetPackageRoot)uno.foundation\6.7.135\buildTransitive\Uno.Foundation.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winrt\6.7.135\buildTransitive\Uno.WinRT.props" Condition="Exists('$(NuGetPackageRoot)uno.winrt\6.7.135\buildTransitive\Uno.WinRT.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.fonts.fluent\2.6.1\buildTransitive\Uno.Fonts.Fluent.props" Condition="Exists('$(NuGetPackageRoot)uno.fonts.fluent\2.6.1\buildTransitive\Uno.Fonts.Fluent.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui\6.7.135\buildTransitive\net9.0\uno.winui.props" Condition="Exists('$(NuGetPackageRoot)uno.winui\6.7.135\buildTransitive\net9.0\uno.winui.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.x11\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.X11.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.x11\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.X11.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.win32metadata\60.0.34-preview\buildTransitive\netstandard1.0\Microsoft.Windows.SDK.Win32Metadata.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.win32metadata\60.0.34-preview\buildTransitive\netstandard1.0\Microsoft.Windows.SDK.Win32Metadata.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.wdk.win32metadata\0.11.4-experimental\buildTransitive\netstandard1.0\Microsoft.Windows.WDK.Win32Metadata.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.wdk.win32metadata\0.11.4-experimental\buildTransitive\netstandard1.0\Microsoft.Windows.WDK.Win32Metadata.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.win32docs\0.1.42-alpha\buildTransitive\netstandard1.0\Microsoft.Windows.SDK.Win32Docs.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.win32docs\0.1.42-alpha\buildTransitive\netstandard1.0\Microsoft.Windows.SDK.Win32Docs.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.win32\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.Win32.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.win32\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.Win32.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.linux.framebuffer\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.Linux.FrameBuffer.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.linux.framebuffer\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.Linux.FrameBuffer.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.macos\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.MacOS.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.macos\6.7.135\buildTransitive\Uno.WinUI.Runtime.Skia.MacOS.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.devserver\6.7.135\buildTransitive\Uno.WinUI.DevServer.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.devserver\6.7.135\buildTransitive\Uno.WinUI.DevServer.props')" />
+    <Import Project="$(NuGetPackageRoot)skiasharp.nativeassets.webassembly\3.119.2\buildTransitive\netstandard1.0\SkiaSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)skiasharp.nativeassets.webassembly\3.119.2\buildTransitive\netstandard1.0\SkiaSharp.NativeAssets.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.hotdesign\1.20.485\build\Uno.UI.HotDesign.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.hotdesign\1.20.485\build\Uno.UI.HotDesign.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.sdk.extras\6.3.1\buildTransitive\Uno.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)uno.sdk.extras\6.3.1\buildTransitive\Uno.Sdk.Extras.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net10.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_Foundation Condition=" '$(PkgUno_Foundation)' == '' ">C:\Users\Alexa\.nuget\packages\uno.foundation\6.7.135</PkgUno_Foundation>
+    <PkgUno_WinRT Condition=" '$(PkgUno_WinRT)' == '' ">C:\Users\Alexa\.nuget\packages\uno.winrt\6.7.135</PkgUno_WinRT>
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\Alexa\.nuget\packages\uno.winui\6.7.135</PkgUno_WinUI>
+    <PkgMicrosoft_Windows_CsWin32 Condition=" '$(PkgMicrosoft_Windows_CsWin32)' == '' ">C:\Users\Alexa\.nuget\packages\microsoft.windows.cswin32\0.3.106</PkgMicrosoft_Windows_CsWin32>
+    <PkgUno_WinUI_DevServer Condition=" '$(PkgUno_WinUI_DevServer)' == '' ">C:\Users\Alexa\.nuget\packages\uno.winui.devserver\6.7.135</PkgUno_WinUI_DevServer>
+    <PkgUno_UI_HotDesign Condition=" '$(PkgUno_UI_HotDesign)' == '' ">C:\Users\Alexa\.nuget\packages\uno.ui.hotdesign\1.20.485</PkgUno_UI_HotDesign>
+    <PkgUno_UI_App_Mcp Condition=" '$(PkgUno_UI_App_Mcp)' == '' ">C:\Users\Alexa\.nuget\packages\uno.ui.app.mcp\1.3.7</PkgUno_UI_App_Mcp>
+    <PkgUno_Settings_DevServer Condition=" '$(PkgUno_Settings_DevServer)' == '' ">C:\Users\Alexa\.nuget\packages\uno.settings.devserver\1.13.4</PkgUno_Settings_DevServer>
+  </PropertyGroup>
+</Project>
